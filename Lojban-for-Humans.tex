@@ -1,6 +1,11 @@
 \documentclass[12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{tipa}
+\usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{fixltx2e} % for \textsubscript{} and \textsuperscript{}, needed for 2015 or later
+\DeclareUnicodeCharacter{0294}{ʔ}
 
 \begin{document}
 
@@ -58,7 +63,7 @@ Though Brown claimed legal restriction on the language, the United States Patent
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% End of Subsection
+% End of Subsection: Loglan
 
 \subsubsection{The Design Goals of Loglan}
 
@@ -112,26 +117,144 @@ Now the sentence seems to state that Conan is going to discuss the topic of \emp
 
 \section{Writing and Pronunciation}
 
-Basic pronunciation is covered in \emph{The Complete Lojban Language} \cite[Chapter 2, p.~16]{CLL}
-
-A more thorough examination of Lojban phonetics can be found in the \emph{The Complete Lojban Language} \cite[Chapter 3, p.~34]{CLL}
+Basic pronunciation is covered in \emph{The Complete Lojban Language}. \cite[Chapter 2, p.~16]{CLL} While a more thorough examination of Lojban phonetics can be found in the \emph{The Complete Lojban Language}, \cite[Chapter 3, p.~34]{CLL} this chapter will attempt to explore and explain the ways to pronounce and write Lojban, while providing additional context to understand the science of language as it relates.
 
 \subsection{Orthography}
 
-The conventions for writing a language, such as rules about spelling, capitalization, and punctuation, constitutes a language's \textbf{orthography}, or "rules for writing". \footnote{For more about Lojban orthography, see \emph{The Complete Lojban Language} \cite[Chapter 3, p.~33]{CLL} }
+The conventions for writing a language, such as rules about spelling, capitalization, and punctuation, constitutes a language's \textbf{orthography}, derived "rules for writing". \footnote{For more about Lojban orthography, see \emph{The Complete Lojban Language} \cite[Chapter 3, p.~33]{CLL} }
 
 \subsubsection{Phonemic Orthography}
 
 
-In Lojban, all sounds of the spoken language correspond to one, unambiguous written equivalent. This means that consonants and vowels don't have multiple possible pronunciations, unlike English. 
+In Lojban, all sounds of the spoken language correspond to one, unambiguous written form. This means that consonants and vowels don't have multiple possible pronunciations, unlike English. 
 
 As an example of how different sounds in English can take different written forms, let's explore the word \emph{fish}. In English you can find the sound of \textbf{f} in \emph{fish} in the letters \textbf{gh} in \emph{enough} and \emph{tough}. The sound made by the \textbf{i} in \emph{fish} can also be found as \textbf{o} in w\textbf{o}men. Finally, the sound made by the letters \textbf{sh} in \emph{fish} can be found as \textbf{ti} in na\textbf{ti}on and mo\textbf{ti}on. In the end you should, logically, be able to represent the word \emph{fish} just as well in English with the re-spelling \emph{ghoti}\footnote{\emph{Ghoti} dates back to, at the latest, 1855. Wikipedia has an \href{https://en.wikipedia.org/wiki/Ghoti}{article} on this topic for further reading.} Of course this is absurd, but so are the rules of English pronunciation!
 
 Lojban avoids this ambiguity by allowing only one possible letter or set of letters for each possible sound. 
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End of Subsection
+
+\subsection{International Phonetic Alphabet}
+
+The International Phonetic Alphabet (IPA) is, as it sounds, an alphabet used to accurately record and learn the sounds of languages. It was created such that a unique symbol exists for every unique sound (i.e. a \emph{phoneme}.) The IPA is mostly made up of the Latin alphabet. Though not as successful as was hoped, largely because requiring so many unique symbols is burdensome both for writing and printing, the IPA is still the most widely used universal system for transcribing phonemes. \cite[Micropedia 6, p.~352]{EB} 
+
+\textit{The Complete Lojban Language} specifies the phonemes for each letter using the IPA. \cite[3.2 Basic Phonetics]{CLL} The following table \ref{table:LojbanIPA}, on page \pageref{table:LojbanIPA}, is a mapping between the Lojban alphabet and IPA phonemes.
+The table is simplified and does not contain every possible variant phenome for each letter. Speech varies depending on whether a speaker has a native language other than English, or if they speak a dialect of English. 
+
+Lojban does not prescribe that each phoneme must be extremely narrow and permits some variety of sounds so long as they fit the broad description and do not overlap. This means that [o] works just as well for the back mid vowel characterized by the letter \emph{o} as \textipa{[O]} does. Most native English speakers will likely use [o], but native French speakers may find themselves more likely to use \textipa{[O]}. Not all of these variations are covered in table \ref{table:LojbanIPA}, though you can find them in \textit{The Complete Lojban Language}. \footnote{ \textit{The Complete Lojban Language} Basic Phonetics chapter can be accessed on the web \href{https://lojban.github.io/cll/3/2/}{here}. }
+
+
+\begin{table}[h]
+\caption{Lojban IPA Transcriptions}
+\begin{tabular}{ l l l l }
+Letter & IPA & Description & English Example \\ 
+\hline
+\\
+' & [h] & an unvoiced glottal spirant & \textbf{h}orse, \textbf{h}am \\ 
+. & [\textglotstop] & a glottal stop, a pause & uh\textbf{-}oh \\
+a & [a] & an open vowel & f\textbf{a}ther \\
+b & [b] & a voiced bilabial stop & \textbf{b}ut, we\textbf{b} \\
+c & \textipa{[S]} & an unvoiced coronal sibilant & \textbf{sh}e, \textbf{s}ure \\
+d & [d] & a voiced dental / alveolar stop & o\textbf{dd}, \textbf{d}o \\
+e & \textipa{[E]} & a front mid vowel & b\textbf{e}d \\
+f & [f] & an unvoiced labial fricative & \textbf{f}ool, o\textbf{ff} \\
+g & [g] & a voiced velar stop & \textbf{g}o, \textbf{g}et, be\textbf{g} \\
+i & [i] & a front close vowel & s\textbf{ee}, m\textbf{ea}t, cit\textbf{y} \\ 
+j & \textipa{[Z]} & a voiced coronal sibilant & \textbf{g}enre, sei\textbf{zu}re, bei\textbf{ge} \\
+k & [k] & an unvoiced velar stop & \textbf{c}at, \textbf{k}ill, s\textbf{k}in \\
+l & [l] & a voiced lateral approximant (may be syllabic) & \textbf{l}eft, be\textbf{ll} \\
+m & [m] & a voiced bilabial nasal (may be syllabic) & \textbf{m}an, ha\textbf{m} \\
+n & [n] & a voiced dental or velar nasal (may be syllabic) & \textbf{n}o, ti\textbf{n} \\
+o & [o] & a back mid vowel & n\textbf{o}, t\textbf{oe}, s\textbf{oa}p \\  
+p & [p] & an unvoiced bilabial stop & \textbf{p}en, ti\textbf{p} \\ 
+r & [r] & a rhotic sound & \textbf{r}un, p\textbf{r}obably \\
+s & [s] & an unvoiced alveolar sibilant & \textbf{s}ee, \textbf{c}ity, pa\textbf{ss} \\
+t & [t] & an unvoiced dental / alveolar stop & \textbf{t}wo, s\textbf{t}ing, be\textbf{t} \\
+u & [u] & a back close vowel & thr\textbf{ou}gh, y\textbf{ou} \\
+v & [v] & a voiced labial fricative & \textbf{v}oice, o\textbf{f} \\
+x & [x] & an unvoiced velar fricative & (Scottish) lo\textbf{ch}, u\textbf{gh} \\
+y & \textipa{[@]} & a central mid vowel & \textbf{a}bout \\
+z & [z] & a voiced alveolar sibilant & \textbf{z}oo, ro\textbf{s}e \\
+\end{tabular}
+\label{table:LojbanIPA}
+\end{table}
+
+\subsubsection{Phonation}
+
+In the descriptions of each letter and phoneme, you see phrases like ``voiced labial fricative''. This may sound like complete nonsense to you. These phrases are descriptions of \emph{how} the sound is made. One description of a sound is its \emph{phonation} -- whether it is voiced or voiceless. 
+
+\emph{Voicing} is when a sound is made by vibrating vocal folds with air. For example, when you say ``dog'', you are voicing the [d] at the start and the [g] at the end. Say ``dog'' and feel the air vibrating your vocal cords. 
+
+\emph{Voiceless} sounds have no passage of air engaging the vocal folds. For example, when you say ``cat,'' you don't engage the vocal cords except to form the vowel [a]. If you took away the [a], you could make both [c] and [t] sounds without any air vibrating your vocal folds.  
+
+\subsubsection{Points of Articulation}
+
+In addition to phonation, there is a description of how the mouth is positioned to form sound. For example, to make the sound [s] like in the word ``\textbf{s}ee,'' your tongue has to form a channel against the gum-line behind your teeth, called the \emph{alveolar ridge}. This is called a \emph{passive articulator}. It is passive because these points of articulation do not move, they are stationary. Here are a list of passive articulation points.
+
+\begin{itemize}
+	\item \emph{alveolar}, the gum-line behind the teeth (called the \textit{alveolar ridge}), e.g. [s] and [z]
+	\item \emph{post-alveolar}, the back of the alveolar ridge
+	\item \emph{dental}, the upper teeth, either on the edge of the teeth or on the inner surface, e.g. [n] and [t] can be both dental
+	\item \emph{labial}, the upper lip, e.g. [f] and [v]
+	\item \emph{palatal}, the hard palate on the roof of your mouth
+	\item \emph{pharyngeal}, the pharynx, or the throat, itself
+	\item \emph{uvular}, the uvula hanging down at the entrance to the throat
+	\item \emph{velar}, the soft palate further back on the roof of the mouth, e.g. [g] and [x]
+	\item \emph{epiglottal}, the entrance to the windpipe, above the voice-box  
+\end{itemize}
+
+\begin{figure}[h]
+	\caption{Points of Articulation}
+	\centering
+		\includegraphics[width=0.5\textwidth]{Places_of_articulation}
+		\begin{multicols}{3}
+			\begin{enumerate}
+				\item Exo-labial
+				\item Endo-labial
+				\item Dental
+				\item Alveolar
+				\item Post-alveolar
+				\item Pre-palatal
+				\item Palatal
+				\item Velar
+				\item Uvular
+				\item Pharyngeal
+				\item Glottal
+				\item Epiglottal
+				\item Radical
+				\item Postero-dorsal
+				\item Antero-dorsal
+				\item Laminal
+				\item Apical
+				\item Sub-apical
+			\end{enumerate}
+		\end{multicols}
+	\label{figure:PointsOfArticulation}
+\end{figure}
+
+
+As we can see on figure \ref{figure:PointsOfArticulation} on page \pageref{figure:PointsOfArticulation} ...
+
+\subsubsection{Manner of Articulation}
+
+In addition to phonation, 
+
+
+\begin{description}
+	\item[ ] \textbf{Fricative}, also called a \textbf{spirant}, is when there is continuous ``frication,'' or noisy airflow, at the place of articulation. Voiced examples include [v] and [z], voiceless [f] and [s].  
+		\begin{description}
+			\item[ ] \textbf{Sibilants} are a type of fricative where airflow passes through a narrow passage in the tongue towards the teeth, resulting in a high-pitch sound. Examples include [s] and [z]. 
+		\end{description}
+	\item[ ] \textbf{Nasal} occlusive is when the oral tract is closed and air passes through the nose. The shape and position of the tongue determines the resonance of the sound. Examples include [m] and [n].
+	\item[ ] \textbf{Stop}, or oral occlusive, is where the oral tract is blocked (occlusion) and there is no nasal air flow. This means the air flow stops completely. Voiceless examples include [p], [t], [k]; voiced examples include [b], [d], and [g]. If voiced, the only sound during the stop is the voicing. If voiceless, the stop is completely silent. Sounds like [p] and [k] are the result of the stop on the preceding vowel, as well as the effect of the release of the stop on the next vowel. The place of articulation determines the resonance that gives stops their different sound characteristics. 
+\end{description}
+
+
+
+
 
 
 \subsection{Vowels}
@@ -155,25 +278,26 @@ Vowels are pronounced in ways that are likely already familiar to you.
 Dipthongs are a combination of two vowel sounds that collapse together to make one single syllable. 
 
 \begin{description}
-\item[ ] \textbf{ai} as in \textbf{ai}sle
-\item[ ] \textbf{ei} as in the \textbf{ey} in th\textbf{ey}
-\item[ ] \textbf{oi} as in the \textbf{oy} in t\textbf{oy}
-\item[ ] \textbf{au} as in the \textbf{ow} in c\textbf{ow}
+\item[ ] \textbf{ai} as in \textbf{ai}sle, \emph{gai} -- hex digit C (twelve)
+\item[ ] \textbf{ei} as in the \textbf{ey} in th\textbf{ey}, \emph{fei} -- hex digit B (eleven)
+\item[ ] \textbf{oi} as in the \textbf{oy} in t\textbf{oy}, \emph{coi} -- hello, greetings
+\item[ ] \textbf{au} as in the \textbf{ow} in c\textbf{ow}, \emph{dau} -- hex digit A (ten)
 \end{description}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End of Subsection
 
 \subsubsection{Dipthongs Starting with I}
 
-In Lojban, \textbf{i} often takes on a quality like the English \textbf{y}. For example, in English \textbf{y} before a vowel often forms a dipthong, exemplified by words like \emph{yes}, \emph{yarrow}, and \emph{yonder}. As a rule, in Lojban, when \textbf{i} comes before a vowel, it has the same effect, for example \emph{.iu} in Lojban is pronounced like the English word \emph{you}. 
+In Lojban, \textbf{i} often takes on a consonant quality like the English \textbf{y}. For example, in English \textbf{y} before a vowel often forms a dipthong, exemplified by words like \emph{yes}, \emph{yarrow}, and \emph{yonder}. As a rule, in Lojban, when \textbf{i} comes before a vowel, it has the same effect. For example, \emph{iu} in Lojban is pronounced like the English word \emph{you}. 
 
 \begin{description}
-\item[ ] \textbf{ia} as in \textbf{ya}wn 
-\item[ ] \textbf{ie} as in \textbf{ye}s 
-\item[ ] \textbf{ii} as in \textbf{yi}eld 
-\item[ ] \textbf{io} as in \textbf{yo}-\textbf{yo}
-\item[ ] \textbf{iu} as in \textbf{you} 
+\item[ ] \textbf{ia} as in \textbf{ya}wn, \emph{iaves} -- Yahweh
+\item[ ] \textbf{ie} as in \textbf{ye}s, \emph{ie} -- expression of agreement
+\item[ ] \textbf{ii} as in \textbf{yi}eld, \emph{iinai} -- shrieks in fear
+\item[ ] \textbf{io} as in \textbf{yo}-\textbf{yo}, \emph{io} -- expression of respect
+\item[ ] \textbf{iu} as in \textbf{you}, \emph{iu} -- expression of love
 \end{description}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -185,11 +309,11 @@ Similar to the rules about \textbf{i} dipthongs, vowels occuring after \textbf{u
 
 
 \begin{description}
-\item[ ] \textbf{ua} as in \textbf{wa}ter 
-\item[ ] \textbf{ue} as in \textbf{we}st 
-\item[ ] \textbf{ui} as in \textbf{we} 
-\item[ ] \textbf{uo} as in \textbf{wo}ah or \textbf{Wo}din
-\item[ ] \textbf{uu} as in \textbf{wu} or \textbf{woo} 
+\item[ ] \textbf{ua} as in \textbf{wa}ter, \emph{ua} -- expression of discovery
+\item[ ] \textbf{ue} as in \textbf{we}st, \emph{ueb} -- the World Wide Web
+\item[ ] \textbf{ui} as in \textbf{we}, \emph{ui} -- expression of happiness 
+\item[ ] \textbf{uo} as in \textbf{wo}ah or \textbf{Wo}din, \emph{uo} -- expression of completion
+\item[ ] \textbf{uu} as in \textbf{wu} or \textbf{woo}, \emph{uu} -- expression of pity 
 \end{description}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -197,8 +321,8 @@ Similar to the rules about \textbf{i} dipthongs, vowels occuring after \textbf{u
 
 \subsection{Consonants}
 
-There are a few irregular consonants in Lojban.
-Lojban only pronounces \textbf{c} like the \textbf{sh} sound in English. 
+There are a few consonants in Lojban that sound differently than English speakers would expect.
+Lojban is different than English in that \textbf{c} is pronounced like the \textbf{sh} sound in English. 
 
 \begin{description}
 \item[ ] \textbf{c} as in fa\textbf{c}ial, \emph{citka} -- to eat
@@ -212,7 +336,7 @@ Lojban only pronounces \textbf{c} like the \textbf{sh} sound in English.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% End of Chapter
+% End of Chapter: Introduction
 
 \mainmatter
 
@@ -3338,31 +3462,38 @@ These are codes used throughout this book.
 
 \begin{thebibliography}{9}
 \bibitem{CLL}
-	John Woldemar Cowan
-	\textit{The Complete Lojban Language},
-	Logical Language Group,
+	Cowan, John Woldemar.
+	\textit{The Complete Lojban Language}.
 	Version 1.1,
+	Logical Language Group,
 	2016-04-12,
 	\href{https://lojban.github.io/cll/}{lojban.github.io}.
 \bibitem{WheelocksLatin}
-	Frederic M. Wheelock,
+	Wheelock, Frederic M.
 	\textit{Wheelock's Latin},
-	HarperCollins Publishers, New York,
 	6th edition, revised,
+	HarperCollins Publishers, New York,
 	2005.
 \bibitem{PinkerWindow}
-	Steven Pinker,
-	\textit{Linguistics as a Window to Understanding the Brain},
+	Pinker, Steven.
+	\textit{Linguistics as a Window to Understanding the Brain}.
 	The Floating University,
 	2011,
 	\href{https://www.youtube.com/watch?v=Q-B_ONJIEcE}{www.youtube.com}.
 \bibitem{BrownSci}
-	James Cooke Brown,
-	\textit{Loglan},
+	Brown, James Cooke.
+	\textit{Loglan}.
+	Volume 202, 
+	Number 6, 
 	Scientific American,
-	Volume 202, Number 6, pp. 53 - 63,
 	1960,
+	pp. 53 - 63,
 	\href{http://members.home.nl/w.dijkhuis/loglan_jcb/Brown_JC_loglan.html}{members.home.nl}.
+\bibitem{EB}
+	\textit{The Encyclopaedia Britannica}.
+	15th Edition,
+	Encyclopaedia Britannica Inc.,
+	1990.
 \end{thebibliography}
 
 \backmatter 
